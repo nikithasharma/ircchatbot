@@ -1,0 +1,2 @@
+# ircchatbot
+IRC chat bot 
