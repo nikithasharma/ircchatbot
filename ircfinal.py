@@ -7,8 +7,8 @@ nie=["He who has a why to live can bear almost any how","To live is to suffer, t
 ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server = "chat.freenode.net" # Server
 channel = "#testabotforme" # Channel
-botnick = "chatterzz" # Your bots nick
-adminname = "cerealkiller666" #Your IRC nickname. On IRC (and most other places) I go by OrderChaos so that’s what I am using for this example.
+botnick = "chatterzz" #  bots nick
+adminname = "cerealkiller666" 
 exitcode = "bye " + botnick
 ircsock.connect((server, 6667)) # Here we connect to the server using the port 6667
 ircsock.send(bytes("USER "+ botnick +" "+ botnick +" "+ botnick + " " + botnick + "\n", "UTF-8")) #We are basically filling out a form with this line and saying to set all the fields to the bot nickname.
