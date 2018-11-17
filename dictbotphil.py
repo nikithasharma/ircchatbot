@@ -24,9 +24,3 @@ philosophical={
                     "Life is not a problem to be solved, but a reality to be experienced.",
                     "Anxiety is the dizziness of freedom.",
                     "People understand me so poorly that they don't even understand my complaint about them not understanding me."]}
-
-print(random.choice(philosophical["Marx"])," - Karl Marx")
-print(random.choice(philosophical["Freud"])," - Sigmund Freud")
-print(random.choice(philosophical["Kierkegaard"])," - Søren Kierkegaard")
-print(random.choice(philosophical["Nietzsche"])," - Friedrich Nietzsche")
-print(random.choice(philosophical["Kant"])," - Immanuel Kant")
