@@ -20,4 +20,4 @@ The other modules and functionalities used are:
 
 # Application
 This bot can be added to any IRC channel and it will bombard it with quotes! WHO DOESN'T LIKE QUOTES Y'ALL?! (_BONUS: It also has jokes!!!!!!!_)
-~~Just ask it for "Jokes"!~~
+~~and by jokes we mean bad puns and dad jokes!~~
