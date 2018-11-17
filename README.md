@@ -9,4 +9,9 @@ socket.getaddrinfo("182.73.209.206",6665) #IP address of the server
 server = "chat.freenode.net" # Server
 channel = "##testabotforme" # Channel
 ```
+# Python functionalities used
+The main functionality making this IRC bot what it is is the module **socket**. 
+The other modules and functionalities used are:
+*General concept of modules
+*Control structures (IF and ElIFs)
 
