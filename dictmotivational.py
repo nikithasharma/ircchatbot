@@ -1,6 +1,8 @@
-import random
+
+    
+
 motivational={
-    "A.P.J.Abdul Kalam" :["Failure will never overtake me if my determination to succeed is strong enough.",
+    "Abdul Kalam" :["Failure will never overtake me if my determination to succeed is strong enough.",
                          "Don’t take rest after your first victory because if you fail in second,more lips are waiting to say that your first victory was just luck.",
                          "Man needs difficulties in life because they are necessary to enjoy the success.",
                          "All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents."],
@@ -22,11 +24,7 @@ motivational={
                   "We all need people who wil give feedbask that's how we improve."]}
 
 
-print(random.choice(motivational["A.P.J.Abdul Kalam"])," - A.P.J.Abdul Kalam")
-print(random.choice(motivational["Paulo Coelho"])," - Paulo Coelho")
-print(random.choice(motivational["Nelson Mandela"])," - Nelson Mandela")
-print(random.choice(motivational["Confusius"])," - Confusius")
-print(random.choice(motivational["Bill Gates"])," - Bill Gates")    
+
     
 
     
