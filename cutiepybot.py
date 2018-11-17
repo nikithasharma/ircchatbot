@@ -88,4 +88,4 @@ def main():
       if ircmsg.find("PING :") != -1:
         ping()
 main()
-S
+
