@@ -11,7 +11,8 @@ channel = "##testabotforme" # Channel
 ```
 # Python functionalities used
 The main functionality making this IRC bot what it is is the module **socket**. 
+
 The other modules and functionalities used are:
-*General concept of modules
-*Control structures (IF and ElIFs)
+- General concept of modules
+- Control structures (IF and ELIFs)
 
