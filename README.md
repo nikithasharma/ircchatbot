@@ -15,4 +15,8 @@ The main functionality making this IRC bot what it is is the module **socket**.
 The other modules and functionalities used are:
 - General concept of modules
 - Control structures (IF and ELIFs)
+- Dictionaries (_everything would collapse without you bud_)
+- Random module
 
+# Application
+This bot can be used to 
