@@ -8,12 +8,13 @@ import dictmotivational
 from dictmotivational import motivational
 import botliterature
 from botliterature import literature
+import dictbotphil 
+from dictbotphil import philosophical 
 socket.getaddrinfo("182.73.209.206",6665)
 ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server = "chat.freenode.net" # Server
 channel = "##testabotforme" # Channel
 botnick = "cutiepybot" #  bots nick
-adminname = "wwww" 
 exitcode = "bye " + botnick
 ircsock.connect((server, 6667)) # Here we connect to the server using the port 6667
 ircsock.send(bytes("USER "+ botnick +" "+ botnick +" "+ botnick + " " + botnick + "\n", "UTF-8")) #We are basically filling out a form with this line and saying to set all the fields to the bot nickname.
@@ -44,9 +45,11 @@ def main():
       if message.rstrip()=="Hi":
         sendmsg("Hello! my name is cutiepybot . I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.motivational2.philosophical3.Literary What kind of quote would you like to see?")
       if message.rstrip()=="Motivational":
-        sendmsg("With whose quote can i inspire you ? Bill Gates ,Confusius,Paulo Coelho,Nelson Mandela or Abdul Kalam")
+        sendmsg("With whose quote can i inspire you ? Bill Gates ,Confusius,Paulo Coelho,Nelson Mandela or Abdul Kalam?")
       if message.rstrip()=="Literary":
-        sendmsg("Would you like to see quotes by Margaret atwood ,Ezra Pound ,Nelson Mandela,John Updike or Italo Calvino")
+        sendmsg("Would you like to see quotes by Margaret Atwood ,Ezra Pound ,Nelson Mandela,John Updike or Italo Calvino?")
+      if message.rstrip()=="Philosophical":
+        sendmsg("Would you like to see quotes by Nietzche, Freud, Karl Marx, Kant or Kierkegaard?")
       if message.rstrip()=="Bill Gates":
         sendmsg(random.choice(motivational["Bill Gates"]))
       if message.rstrip()=="Confusius":
@@ -67,7 +70,17 @@ def main():
         sendmsg(random.choice(literature["Italo Calvino"]))
       if message.rstrip()=="Forster":
         sendmsg(random.choice(literature["Forster"]))
-      if name.lower() == adminname.lower() and message.rstrip() == exitcode:
+      if message.rstrip()=="Nietzsche":
+        sendmsg(random.choice(philosophical["Nietzsche"]))
+      if message.rstrip()=="Freud":
+        sendmsg(random.choice(philosophical["Frued"]))
+      if message.rstrip()==" Karl Marx":
+        sendmsg(random.choice(philosophical["Marx"]))
+      if message.rstrip()=="Kant":
+        sendmsg(random.choice(philosophical["Kant"]))
+      if message.rstrip()=="Kierkegaard":
+        sendmsg(random.choice(philosophical["Kiekegaard"]))
+      if message.rstrip() == exitcode:
         sendmsg("oh...okay. :'(")
         ircsock.send(bytes("QUIT \n", "UTF-8"))
         return
