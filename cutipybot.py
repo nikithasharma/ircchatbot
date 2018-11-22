@@ -40,7 +40,7 @@ def main():
       name = ircmsg.split('!',1)[0][1:]
       message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
       if "hi" in message.rstrip():
-        sendmsg("Hello! my name is pybot) 
+        sendmsg("Hello! my name is pybot") 
       if 'what can you do' in message.rstrip():
         sendmsg( "I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
       if "jokes" in message.rstrip():
