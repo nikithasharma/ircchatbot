@@ -11,8 +11,7 @@ socket.getaddrinfo("182.73.209.206",6665)
 ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server = "chat.freenode.net" # Server
 channel = "##testabotforme" # Channel
-botnick = "cutiepybot" #  bots nick
-adminname = "bot123"
+botnick = "pybot" #  bots nick
 exitcode = "bye " + botnick
 ircsock.connect((server, 6667)) # Here we connect to the server using the port 6667
 ircsock.send(bytes("USER "+ botnick +" "+ botnick +" "+ botnick + " " + botnick + "\n", "UTF-8")) #We are basically filling out a form with this line and saying to set all the fields to the bot nickname.
@@ -41,7 +40,7 @@ def main():
       name = ircmsg.split('!',1)[0][1:]
       message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
       if message.rstrip()=="Hi":
-        sendmsg("Hello! my name is cutiepybot . I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.motivational 2.philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
+        sendmsg("Hello! my name is pybot . I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
       if message.rstrip()=="jokes":
         sendmsg(random.choice(jokes))
       if message.rstrip()=="motivational":
