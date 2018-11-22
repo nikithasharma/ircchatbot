@@ -39,45 +39,46 @@ def main():
     if ircmsg.find("PRIVMSG") != -1:
       name = ircmsg.split('!',1)[0][1:]
       message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
-      if message.rstrip()=="Hi":
+      if "hi" in message.rstrip():
         sendmsg("Hello! my name is pybot . I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
-      if message.rstrip()=="jokes":
+      if "jokes" in message.rstrip():
         sendmsg(random.choice(jokes))
-      if message.rstrip()=="motivational":
+      if "motivational" in message.rstrip():
         sendmsg("With whose quote can i inspire you ? Bill Gates ,Confusius,Paulo Coelho,Nelson Mandela or Abdul Kalam?")
-      if message.rstrip()=="literary":
+      if "literary" in message.rstrip():
         sendmsg("Would you like to see quotes by Margaret Atwood ,Ezra Pound ,Nelson Mandela,John Updike or Italo Calvino?")
-      if message.rstrip()=="philosophical":
+      if "philosophical" in message.rstrip():
         sendmsg("Would you like to see quotes by Nietzche, Freud, Karl Marx, Kant or Kierkegaard?")
-      if message.rstrip()=="Bill Gates":
+      if "Bill Gates" in message.rstrip():
         sendmsg(random.choice(motivational["Bill Gates"]))
-      if message.rstrip()=="Confusius":
+      if "Confusius" in message.rstrip():
         sendmsg(random.choice(motivational["Confusius"]))
-      if message.rstrip()=="Paulo Coelho":
+      if "Paulo Coelho" in message.rstrip():
+      if message.rstrip()==:
         sendmsg(random.choice(motivational["Paulo Coelho"]))
-      if message.rstrip()=="Nelson Mandela":
+      if "Nelson Mandela" in message.rstrip():
         sendmsg(random.choice(motivational["Nelson Mandela"]))
-      if message.rstrip()=="Abdul Kalam":
+      if "Abdul Kalam" in message.rstrip():
         sendmsg(random.choice(motivational["A.P.J.Abdul Kalam"]))
-      if message.rstrip()=="Margaret Atwood":
+      if "Margaret Atwood" in message.rstrip():
         sendmsg(random.choice(literature["Margaret Atwood"]))
-      if message.rstrip()=="Ezra Pound":
+      if "Erza Pound" in message.rstrip():
         sendmsg(random.choice(literature["Ezra Pound"]))
-      if message.rstrip()=="John Updike":
+      if "John Updike" in message.rstrip():
         sendmsg(random.choice(literature["John Updike"]))
-      if message.rstrip()=="Italo Calvino":
+      if "Italo Calvino" in message.rstrip():
         sendmsg(random.choice(literature["Italo Calvino"]))
-      if message.rstrip()=="Forster":
+      if "Forster" in message.rstrip():
         sendmsg(random.choice(literature["Forster"]))
-      if message.rstrip()=="Nietzsche":
+      if "Nietzsche" in message.rstrip():
         sendmsg(random.choice(philosophical["Nietzsche"]))
-      if message.rstrip()=="Freud":
+      if "Freud" in message.rstrip():
         sendmsg(random.choice(philosophical["Frued"]))
-      if message.rstrip()==" Karl Marx":
+      if " Karl Marx" in message.rstrip():
         sendmsg(random.choice(philosophical["Marx"]))
-      if message.rstrip()=="Kant":
+      if "Kant" in message.rstrip():
         sendmsg(random.choice(philosophical["Kant"]))
-      if message.rstrip()=="Kierkegaard":
+      if "Kierkegaard" in message.rstrip():
         sendmsg(random.choice(philosophical["Kiekegaard"]))
       if message.rstrip() == exitcode:
         sendmsg("oh...okay. :'(")
