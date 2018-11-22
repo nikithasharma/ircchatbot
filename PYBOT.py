@@ -39,7 +39,7 @@ def main():
     if ircmsg.find("PRIVMSG") != -1:
       name = ircmsg.split('!',1)[0][1:]
       message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
-      if "hi" in message.rstrip():
+      if "hey" in message.rstrip():
         sendmsg("Hello! my name is pybot") 
       if "what can you do" in message.rstrip():
         sendmsg( "I'm an IRC bot that can bombard your life with quotes! .If you are not interested in quotes I have some funny jokes as well.")
@@ -62,7 +62,7 @@ def main():
       if "Nelson Mandela" in message.rstrip():
         sendmsg(random.choice(motivational["Nelson Mandela"]))
       if "Abdul Kalam" in message.rstrip():
-        sendmsg(random.choice(motivational["A.P.J.Abdul Kalam"]))
+        sendmsg(random.choice(motivational["Abdul Kalam"]))
       if "Margaret Atwood" in message.rstrip():
         sendmsg(random.choice(literature["Margaret Atwood"]))
       if "Erza Pound" in message.rstrip():
@@ -73,16 +73,16 @@ def main():
         sendmsg(random.choice(literature["Italo Calvino"]))
       if "Forster" in message.rstrip():
         sendmsg(random.choice(literature["Forster"]))
-      if "Nietzsche" in message.rstrip():
-        sendmsg(random.choice(philosophical["Nietzsche"]))
+      if "Nietzche" in message.rstrip():
+        sendmsg(random.choice(philosophical["Nietzche"]))
       if "Freud" in message.rstrip():
-        sendmsg(random.choice(philosophical["Frued"]))
-      if " Karl Marx" in message.rstrip():
+        sendmsg(random.choice(philosophical["Freud"]))
+      if "Karl Marx" in message.rstrip():
         sendmsg(random.choice(philosophical["Marx"]))
       if "Kant" in message.rstrip():
         sendmsg(random.choice(philosophical["Kant"]))
       if "Kierkegaard" in message.rstrip():
-        sendmsg(random.choice(philosophical["Kiekegaard"]))
+        sendmsg(random.choice(philosophical["Kierkegaard"]))
       if "thanks"  in message.rstrip():
         sendmsg("you're welcome. I'm glad I could help you :) ")
       if message.rstrip() == exitcode:

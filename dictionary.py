@@ -21,7 +21,7 @@ motivational={
                   "We all need people who wil give feedbask that's how we improve."]}
 
 philosophical={
-    "Nietzsche":    ["He who has a why to live can bear almost any how",
+    "Nietzche":    ["He who has a why to live can bear almost any how",
                     "To live is to suffer, to survive is to find some meaning in the suffering",
                     "Without music, life would be a mistake.",
                     "That which does not kill us makes us stronger"],
