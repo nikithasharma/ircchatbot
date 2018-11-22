@@ -46,7 +46,7 @@ def main():
       if "jokes" in message.rstrip():
         sendmsg(random.choice(jokes))
       if "quotes" in message.rstrip():
-        sendmsg("Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to psee?")
+        sendmsg("Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?")
       if "motivational" in message.rstrip():
         sendmsg("With whose quote can i inspire you ? Bill Gates ,Confusius,Paulo Coelho,Nelson Mandela or Abdul Kalam?")
       if "literary" in message.rstrip():
