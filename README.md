@@ -1,5 +1,5 @@
-# Cutiepybot
-Cutiepybot is an IRC bot built using Python. It works as a quote generator and has Motivational, Literary and Philosophical quotes.
+# Pybot
+Pybot is an IRC bot built using Python. It works as a quote generator and has Motivational, Literary and Philosophical quotes.
 
 # Run
 There are 2 files, a module and the main file. Both of them should be saved in the same file and the channel and server name of the IRC should be changed before running the main file. 
