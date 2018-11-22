@@ -40,14 +40,16 @@ def main():
       name = ircmsg.split('!',1)[0][1:]
       message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
       if "hi" in message.rstrip():
-        sendmsg("Hello! my name is pybot . I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
+        sendmsg("Hello! my name is pybot) 
+      if 'what can you do' in message.rstrip():
+        sendmsg( "I'm an IRC bot that can bombard your life with quotes! Right now I've got three types of quotes,1.Motivational 2.Philosophical 3.Literary. What kind of quote would you like to see?.If you are not interested in quotes I have some funny jokes also.")
       if "jokes" in message.rstrip():
         sendmsg(random.choice(jokes))
       if "motivational" in message.rstrip():
         sendmsg("With whose quote can i inspire you ? Bill Gates ,Confusius,Paulo Coelho,Nelson Mandela or Abdul Kalam?")
-      if "literary" in message.rstrip():
+      if "literary" or "literature"in message.rstrip():
         sendmsg("Would you like to see quotes by Margaret Atwood ,Ezra Pound ,Nelson Mandela,John Updike or Italo Calvino?")
-      if "philosophical" in message.rstrip():
+      if "philosophical" or "philosophy" in message.rstrip():
         sendmsg("Would you like to see quotes by Nietzche, Freud, Karl Marx, Kant or Kierkegaard?")
       if "Bill Gates" in message.rstrip():
         sendmsg(random.choice(motivational["Bill Gates"]))
@@ -80,8 +82,10 @@ def main():
         sendmsg(random.choice(philosophical["Kant"]))
       if "Kierkegaard" in message.rstrip():
         sendmsg(random.choice(philosophical["Kiekegaard"]))
+      if "thanks" or "thank you" in message.rstrip():
+        sendmsg("you're welcome. I'm glad I could help you :) ")
       if message.rstrip() == exitcode:
-        sendmsg("oh...okay. :'(")
+        sendmsg("oh...okay. :'(  bye ")
         ircsock.send(bytes("QUIT \n", "UTF-8"))
         return
     else:
